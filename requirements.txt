@@ -1,0 +1,4 @@
+# kenya-legal-rag dependencies
+# Core: no heavy dependencies — uses standard library + optional LlamaIndex
+# For production RAG with vector store:
+# pip install llama-index sentence-transformers faiss-cpu
