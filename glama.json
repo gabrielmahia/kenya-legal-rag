@@ -1,0 +1,72 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/1.0.0/server.json",
+  "name": "kenya-legal-rag",
+  "version": "0.1.0",
+  "description": "Retrieval-Augmented Generation over Kenya's key legal documents. Enables AI agents to query the Constitution of Kenya 2010, Employment Act, Land Act, Companies Act, and Data Protection Act in English or Kiswahili. First Kenya legal corpus MCP server.",
+  "license": "MIT",
+  "homepage": "https://gabrielmahia.github.io",
+  "author": {
+    "name": "Gabriel Mahia",
+    "email": "contact@aikungfu.dev",
+    "url": "https://gabrielmahia.github.io"
+  },
+  "keywords": [
+    "kenya",
+    "legal",
+    "rag",
+    "constitution",
+    "employment-act",
+    "land-act",
+    "swahili",
+    "east-africa",
+    "mcp",
+    "model-context-protocol",
+    "civic-tech",
+    "legal-ai",
+    "data-protection",
+    "companies-act"
+  ],
+  "tools": [
+    {
+      "name": "query",
+      "description": "Query Kenya legal documents in English or Kiswahili. Returns accurate answers grounded in the Constitution of Kenya, Employment Act, Land Act, Companies Act, and Data Protection Act with source citations.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielmahia/kenya-legal-rag"
+  },
+  "installation": {
+    "pip": "kenya-legal-rag"
+  },
+  "relatedServers": [
+    {
+      "name": "mpesa-mcp",
+      "url": "https://github.com/gabrielmahia/mpesa-mcp",
+      "description": "M-PESA Daraja API MCP server by same author"
+    },
+    {
+      "name": "swahili-health-mcp",
+      "url": "https://github.com/gabrielmahia/swahili-health-mcp",
+      "description": "Kenya DHIS2 health data MCP server"
+    }
+  ],
+  "maintainers": [
+    "gabrielmahia"
+  ],
+  "envVars": [
+    {
+      "name": "GOOGLE_API_KEY",
+      "description": "Google Gemini API key for RAG generation. Get free tier at aistudio.google.com",
+      "required": true,
+      "secret": true,
+      "example": "Get free key at aistudio.google.com/apikey"
+    }
+  ]
+}
