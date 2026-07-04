@@ -60,3 +60,7 @@ See also: [mpesa-mcp](https://github.com/gabrielmahia/mpesa-mcp) | [civic-agent-
 ## Disclaimer
 
 Legal information only. Not legal advice. Consult a qualified advocate for legal matters.
+
+## IP & Collaboration
+
+MIT licensed. Feedback via GitHub Issues only — pull requests are not accepted. Full policy: [docs/architecture/IP_POLICY.md](docs/architecture/IP_POLICY.md). Security reports: see [SECURITY.md](SECURITY.md).
