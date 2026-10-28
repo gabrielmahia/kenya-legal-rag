@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "repository": "gabrielmahia/kenya-legal-rag",
+  "project": "kenya-legal-rag",
+  "stable_branch": "main",
+  "integration_branch": "main",
+  "purpose": "⚖️ RAG system over Kenya legal documents — query the Constitution, Employment Act, Land Act, and Companies Act in Swahili",
+  "cold_start": [
+    "AGENTS.md",
+    "README.md"
+  ],
+  "commands": {
+    "install": "pip install -r requirements.txt",
+    "test": "python -m pytest",
+    "lint": "see .github/workflows/ci.yml"
+  },
+  "coordination": {
+    "task_registry": "GitHub Issues",
+    "work_claim": "Draft PR",
+    "branch_pattern": "agent/<agent-name>/<issue-number>-<slug>",
+    "pr_title_pattern": "[CLAIM #<issue>] <agent-name>: <scope>",
+    "authority": "Tests and external reality, not model consensus"
+  },
+  "current_workstreams": [],
+  "prohibited_autonomous_actions": [
+    "change licensing",
+    "expose credentials",
+    "present simulated or demo data as real",
+    "weaken a safety guard or truth label"
+  ],
+  "reasoning_standard": {
+    "id": "coverage-adaptive-reasoning:v2",
+    "canonical": "https://github.com/gabrielmahia/nairobi-stack/blob/main/docs/COVERAGE_ADAPTIVE_REASONING.md"
+  },
+  "provenance": {
+    "generated": "2026-10-28",
+    "from": "the repository's files and GitHub metadata",
+    "unknown": []
+  }
+}
